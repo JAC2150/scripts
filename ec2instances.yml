@@ -1,0 +1,10 @@
+---
+- tasks:
+  - ec2:
+      key_name: wowyou
+      instance_type: t1.micro
+      image: ami-43a15f3e
+      wait: yes
+      group: launch-wizard-4
+      count: 1 
+      assign_public_ip: yes	 
