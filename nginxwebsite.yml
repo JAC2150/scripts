@@ -1,0 +1,9 @@
+#!/bin/bash
+sudo apt-get update -y
+sudo apt-get install nginx -y
+cd /var/www/html
+sudo wget https://joshc1.s3.amazonaws.com/index.html
+sudo wget https://joshc1.s3.amazonaws.com/style.css
+sudo wget https://joshc1.s3.amazonaws.com/script.js
+
+jenkins ALL=(ALL) NOPASSWD: ALL
